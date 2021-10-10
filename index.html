@@ -14,8 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
-
+    <link rel="stylesheet" href="./css/style.css"> 
 </head>
 
 <body class="basic-element">
@@ -42,11 +41,10 @@
         </div>
     </header>
     <main class="caption">
-        <section class="wrapper" lang="ru">
+        <section class="wrapper f-section" lang="ru">
             <div class="container container-hero">
-                <h1 class="headline first-unit">Эффективные решения для вашего бизнеса</>
-                </h1>
-                <button class="btn button" type="button">Заказать услугу</button>
+                <h1 class="headline first-unit">Эффективные решения для вашего бизнеса</h1>
+                <button data-modal-open class="btn button" type="button">Заказать услугу</button>
             </div>
         </section>
         <section class="section" lang="ru">
@@ -93,7 +91,7 @@
             </div>
         </section>
         <!-- Company activty -->
-        <section class="section" lang="ru">
+        <section class="section area" lang="ru">
             <div class="container block-list">
                 <h2 class="subtitle-1">Чем мы занимаемся</h2>
                 <ul class="worker-list">
@@ -304,15 +302,15 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop is-hidden" data-backdrop>
-        <div class="modal">
+    <div class="backdrop is-hidden">
+        <div class="modal" data-modal>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed repudiandae accusamus nobis impedit doloribus
                 harum quo in praesentium dicta nulla fugiat voluptates officiis, natus rem facilis eos, dolore modi odit.
                 Quisquam reiciendis quo sit. Cupiditate amet quos ipsum, nobis similique optio dolore tempore magnam illum
                 magni aliquid cumque quam, vel ipsa consequatur! Adipisci vitae atque natus id sed porro nesciunt!</p>
             <button data-close-modal>Close</button>
         </div>
-    </div>
+    </div>   
     <script src="./js/modal.js"></script>
 </body>
 
