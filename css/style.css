@@ -1025,17 +1025,28 @@ color: #ffffff;
 .sub-nav-unit {
   display: flex;
   justify-content: flex-end;
+  height: 100%;
+  padding: 0; /* for demo purposes */ 
+  margin: 0; /* for demo purposes */ 
+  height: 100%;
 }
 .sub-iteam-unit {
   display: flex;
-  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  justify-content: center;
   padding-left: 160px;
 }
 .net-menu {
   display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
   flex-direction: row;
   align-items: baseline;
   text-align: center;
+  align-content: center;
 }
 /* Margin for header */
 .logo {
@@ -1295,55 +1306,71 @@ list-style-type: none;
 .site-nav .item-1 .current {
   position: relative;
   color: #2196F3;
-  padding: 10px 20px;
   text-decoration: none;
   height: 4px;
  
 }
 .site-nav .item-1 .current::after {
-  left: 0;
-  bottom: 0;
+  left: 10px;
+  bottom: -25px;
   position: absolute;
   content: '';
   display: block;
-  background-color: blue;
+  background-color: #2196F3;
   opacity: 0;
 }
 .site-nav .current:hover::after {
   position: relative;
   color: #2196F3;
   display: block;
-  padding: 10px 20px;
+  width: 78px;
   text-decoration: none;
   opacity: 1;
  
 }
+
+
 .site-nav .current::after {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -25px;
   content: '';
   display: block;
   background-color: #2196F3;
   opacity: 0;
 }
 .site-nav .current:hover::after {
+  display: flex;
+  align-items: flex-end;
   opacity: 1;
+  height: 4px;
+  cursor: pointer;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  max-width: 78px;
+  margin-top: auto;
+  margin-left: auto;
+  text-decoration: uderline;
 }
 /* Portfolio hover */
 /* Portfolio hover */
+
 .sub-nav .current {
   position: relative;
-  padding: 10px 20px;
   text-decoration: none;
   height: 4px;
- 
+  width: 78px;
 }
 .sub-nav  .current::after {
   left: 0;
-  bottom: 0;
+  bottom: -32px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
   position: absolute;
   content: '';
+  height: 4px;
   display: block;
   background-color: #2196F3;
   opacity: 0;
@@ -1352,51 +1379,37 @@ list-style-type: none;
   position: relative;
   color: #2196F3;
   display: block;
-  padding: 10px 20px;
   text-decoration: none;
   opacity: 1;
   height: 4px;
- 
+  cursor: pointer;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  max-width: 78px;
+  margin-top: auto;
+  margin-left: auto;
+  text-decoration: underline;
+
 }
 .sub-nav .current::after {
   position: absolute;
-  left: 0;
-  bottom: 0;
+  bottom: -32px;
   content: '';
   display: block;
   background-color: #2196F3;
   opacity: 0;
+  display: flex;
+  align-items: flex-end;
+  opacity: 1;
+  height: 4px;
+  
 }
 
 .sub-nav  .current:hover::after {
   opacity: 1;
   height: 4px;
 }
-
-/* hover with text Portfolio */
-/* .hover-text a {
-  display: table;
-  height: 370px;
-  width: 294px;
-  text-decoration: none;
-}
-.hover-text a div {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  font-size: 3.0em;
-  color: white;
-  position: relative;
-}
-.image-container img {
-  vertical-align: top; /* fixes white space due to baseline alignment */
-  /* position: absolute;
-}
-.image-container:hover .hover-text {
-  opacity: 1;
-  transition-duration: 1s;
-  transition-timing-function: linear;
-} */ */
 
 }
 .imagine-container{
@@ -1443,3 +1456,4 @@ height: 168px;
   background: rgba(33, 150, 243, 0.9); 
   opacity: 1;
  }
+
