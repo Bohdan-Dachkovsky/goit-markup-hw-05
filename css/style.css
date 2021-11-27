@@ -429,8 +429,9 @@ font-style: normal;
   align-items: baseline;
   text-align: center;
 }
-.box {
+.header-contents {
  display: flex; 
+ align-self: baseline;
 }
 /* Margin for header */
 .site-nav li {
