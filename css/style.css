@@ -39,7 +39,7 @@ color: #2196F3;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
-  transition-timing-function: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 /* Add ps-style focus for item1 */
 .site-nav .item-1 a:focus {
@@ -143,6 +143,10 @@ h3 {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   animation-delay: 500ms;
 
+}
+.list {
+  display: inline-flex;
+  margin-left: auto;
 }
 /*Add a ps-style focus for adittional block */
 .aside .tel:focus {
@@ -390,9 +394,7 @@ font-style: normal;
  
 }
 .first-site-unit {
-  display: flex;
-  justify-content: flex-end;
-
+  margin-left: 93px;
 }
 .second-site-unit {
   display: flex;
@@ -410,36 +412,25 @@ font-style: normal;
  display: flex; 
 }
 /* Margin for header */
+.site-nav li {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 50px;
+}
+.site-nav li:last-child {
+ margin-right: 0; 
+}
 .nav-container .page-for-logo {
-  padding-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  vertical-align: middle;
+  display: inline-flex;
+  align-items: center;
 }
-.link-1 {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding: 50px;
-  transition-property: background-color;
-  transition-duration: 250ms ;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  animation-delay: 500ms;
 
-}
-.link {
- padding-top: 32px;
- padding-bottom: 32px;
-}
 .second-site-unit .contact {
- padding-left: 159px;
- padding-right: 50px;
- padding-top: 32px;
  vertical-align: middle;
  transition-property: background-color;
  transition-duration: 250ms ;
  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  animation-delay: 500ms;
-
 }
 .second-site-unit > .contact-1 {
  padding-top: 32px;
@@ -1048,7 +1039,6 @@ color: #ffffff;
 }
 /* Margin for header */
 .logo {
-  padding-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
 }
