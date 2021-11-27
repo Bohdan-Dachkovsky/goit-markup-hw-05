@@ -13,6 +13,13 @@ ul {
 a {
   text-decoration: none;
 }
+ul {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
 /* Шрифт для логотипа */
 .logo .bluecolor {
 color: #2196F3;
@@ -72,13 +79,17 @@ color: #2196F3;
 }
 .list .list-tel:hover {
 color: #2196F3;
-  color: #080545;
 }
+/* Bright-hover-icons */
 .list .e-mail:hover {
 color: #2196F3;  
-  color: #080545;
 }
-
+.e-mail:hover .contact-mail {
+  fill: var(--basic-bg-color);
+}
+.contact-1:hover svg {
+  fill: rgba(33, 150, 243, 1);
+}
 /* Дополнительная навигация */
 .e-mail {
   font-family: Roboto, sans-serif;
@@ -91,8 +102,6 @@ color: #2196F3;
   transition-duration: 250ms ;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   animation-delay: 500ms;
-
-
 }
 /* Add style focus for adittional block */
 .list-tel .tittle:focus,
@@ -123,11 +132,10 @@ h3 {
   color: #757575;
   line-height: 1.14;                      
   letter-spacing: 0.02em;
-  transition-property: background-color;
+  transition-property: color;
   transition-duration: 250ms ;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   animation-delay: 500ms;
-
 }
  .list .e-mail {
   font-family: Roboto, sans-serif;
@@ -138,15 +146,35 @@ h3 {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
-  transition-property: background-color;
+  transition-property: color;
   transition-duration: 250ms ;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   animation-delay: 500ms;
 
 }
 .list {
-  display: inline-flex;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
   margin-left: auto;
+}
+.list .contact-mail {
+
+  width: 16px;
+  height: 12px;
+}
+.list svg {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  vertical-align: middle;
+  fill: rgba(117, 117, 117, 1);
+  transition: fill 350ms linear 1s;
+}
+.contact-mail {
+  width: 10px;
+  height: 16px; 
 }
 /*Add a ps-style focus for adittional block */
 .aside .tel:focus {
@@ -346,11 +374,7 @@ font-style: normal;
 
 
 /* Start flexbox model */
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-  }
+
   .customers-of-companies {
   width: 1200px;
   padding-left: 15px;
@@ -394,14 +418,11 @@ font-style: normal;
  
 }
 .first-site-unit {
+  display: inline-flex;
+  align-items: baseline;
   margin-left: 93px;
 }
-.second-site-unit {
-  display: flex;
-  justify-content: flex-end;
-  align-items: baseline;
-  text-align: center;
-}
+
 .nav-container  {
   display: flex;
   flex-direction: row;
@@ -426,6 +447,9 @@ font-style: normal;
 }
 
 .second-site-unit .contact {
+ display: inline-flex;
+ flex-direction: row-reverse;
+ margin-right: 30px;
  vertical-align: middle;
  transition-property: background-color;
  transition-duration: 250ms ;
@@ -433,8 +457,9 @@ font-style: normal;
  animation-delay: 500ms;
 }
 .second-site-unit > .contact-1 {
- padding-top: 32px;
- padding-left: auto; 
+ display: inline-flex;
+ flex-direction: row-reverse;
+ align-self: center;
  vertical-align: middle;
  transition-property: background-color;
  transition-duration: 250ms ;
@@ -474,11 +499,10 @@ flex-basis: auto;
   padding-bottom: 25px;
 }
 .pic-1 {
-order: 1;
-vertical-align: middle;
-padding-left: 100px;
-padding-right: 100px;
+width: 70px;
+height: 70px;
 }
+
  /* ADD ICONS SVG */  /* ADD ICONS SVG */
 .networks {
   width: 20px;
@@ -1001,11 +1025,7 @@ color: #ffffff;
 *no-italic {
   font-style: normal;
 }
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-  }
+
 .container-1 {
   padding-left: 15px;
   padding-right: 15px;
@@ -1314,7 +1334,7 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 /* Add backlights */
 .site-nav .current:after  {
   position: relative;
-  top: 25px;
+  top: 24px;
   left: 0;
   padding: 0;
   margin: 0;
