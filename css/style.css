@@ -504,9 +504,9 @@ height: 70px;
 }
  /* ADD ICONS SVG */  /* ADD ICONS SVG */
 .networks {
-  fill: #AFB1B8;
   width: 20px;
   height: 20px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
  .networks {
   fill:rgba(175, 177, 184, 1); 
@@ -622,7 +622,7 @@ color: #ffffff;
 
 .list-employee a:hover {
    background-color: #2196f3;
-   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: background-color 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .bottom-list-icon a:hover {
    background-color: #2196f3;
@@ -637,6 +637,7 @@ color: #ffffff;
 }
 .below-icons {
   display: flex;
+  position: absolute;
   align-items: flex-end;
   justify-content: center;
   width: 20px;
@@ -654,12 +655,15 @@ color: #ffffff;
   margin-inline-end: 0px;
   padding-inline-start: 0px;
 }
-
+.link-icon img {
+  display: block;
+  position: relative;
+}
 .link-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(117, 117, 117, 1);
+  background-color: rgba(255, 255, 255, 0,1);
   width: 44px;
   height: 44px;
   margin: 0;
@@ -950,9 +954,8 @@ transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
 .titles .btn-option:hover,
 .titles .btn-option:focus {
 background-color: #2196F3;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: background-color 850ms cubic-bezier(0.4, 0, 0.2, 1);
 color: #ffffff;
-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 box-shadow: 0px 2px 2px 0px #00000012;
 }
 
@@ -1266,6 +1269,7 @@ margin-inline-end: 0px;
 }
 .list-of-file > .feature:hover {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list-of-file > .feature {
   border: 1px solid rgba(238, 238, 238, 1);
