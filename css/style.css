@@ -17,7 +17,6 @@ ul {
     margin-block-start: 0em;
     margin-block-end: 0em;
     margin-inline-start: 0px;
-
     margin-inline-end: 0px;
     padding-inline-start: 0px;
 }
@@ -45,8 +44,8 @@ color: #2196F3;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  color: rgba(33, 150, 243, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 /* Add ps-style focus for item1 */
 .site-nav .item-1 a:focus {
@@ -99,7 +98,6 @@ color: #2196F3;
   transition-property: background-color;
   transition-duration: 250ms ;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  animation-delay: 500ms;
 }
 /* Add style focus for adittional block */
 .list-tel .title:focus,
@@ -133,7 +131,6 @@ h3 {
   transition-property: color;
   transition-duration: 250ms ;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  animation-delay: 500ms;
 }
  .list .e-mail {
   font-style: normal;
@@ -147,8 +144,6 @@ h3 {
   transition-property: color;
   transition-duration: 250ms ;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  animation-delay: 500ms;
-
 }
 .list {
   display: flex;
@@ -166,7 +161,6 @@ h3 {
   margin-right: 10px;
   vertical-align: middle;
   fill: rgba(117, 117, 117, 1);
-  transition: fill 350ms linear 1s;
 }
 .contact-mail {
   width: 10px;
@@ -182,6 +176,7 @@ h3 {
   height: 16px;
   margin-right: 10px;
   fill: rgba(117, 117, 117, 1);
+  vertical-align: middle;
 }
 /*Add a ps-style focus for adittional block */
 .aside .tel:focus {
@@ -454,7 +449,6 @@ area {
  transition-property: background-color;
  transition-duration: 250ms ;
  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
- animation-delay: 500ms;
 }
 .second-site-unit > .contact-1 {
  display: inline-flex;
@@ -464,8 +458,6 @@ area {
  transition-property: background-color;
  transition-duration: 250ms ;
  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
- animation-delay: 500ms;
-
 }
 
 /* Start wrapper padding */
@@ -515,10 +507,10 @@ height: 70px;
   fill: #AFB1B8;
   width: 20px;
   height: 20px;
-
 }
  .networks {
   fill:rgba(175, 177, 184, 1); 
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 .icon-png {
   display: inline-flex;
@@ -531,10 +523,9 @@ height: 70px;
   list-style:none;
   border-radius: 50%;
   flex-wrap: nowrap;
-  transition-property: background-color, fill;
-  transition-duration: 250ms ;
+  transition-property: background-color;
+  transition-duration: 350ms ;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  animation-delay: 500ms;
 }
 .icon-png:hover .networks use{
  fill: rgba(255, 255, 255, 1);
@@ -542,6 +533,12 @@ height: 70px;
 /* .Customers our studio*/
 .icon-client > h2 {
   margin-bottom: 50px;
+  height: 42px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
 .figure {
   display: flex;
@@ -556,6 +553,7 @@ height: 70px;
 }
 .figure:hover svg {
   fill:  rgba(33, 150, 243, 1);
+  transition: fill 250ms  cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers > li:hover {
 border: 1px solid  rgba(33, 150, 243, 1);
@@ -571,7 +569,7 @@ border: 1px solid  rgba(33, 150, 243, 1);
   list-style: none;
 } 
 .customers > li {
- transition: border 260ms linear 0.27s;
+ transition: border 250ms  cubic-bezier(0.4, 0, 0.2, 1);
  flex-basis: calc((100%-150px)/6);
  margin-right: 30px; 
  min-width: none;width: 172px;
@@ -624,9 +622,12 @@ color: #ffffff;
 
 .list-employee a:hover {
    background-color: #2196f3;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .bottom-list-icon a:hover {
    background-color: #2196f3;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 /* Icon for footer */         /* Icon for footer */
@@ -658,7 +659,7 @@ color: #ffffff;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: #4241413d;
+  background-color: rgba(117, 117, 117, 1);
   width: 44px;
   height: 44px;
   margin: 0;
@@ -669,7 +670,6 @@ color: #ffffff;
   transition-property: background-color;
   transition-duration: 250ms ;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  animation-delay: 500ms;
   margin-right: 10px;
 }
 .block-icon {
@@ -863,7 +863,6 @@ footer {
   transition-property: background-color;
   transition-duration: 250ms ;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  animation-delay: 500ms;
 }
 
 
@@ -873,13 +872,13 @@ footer {
   font-size: 14px;
   line-height: 1.14;
   color:  #2196f3;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .item a {
   font-family: Roboto;
-  transition-property: background-color;
+  transition-property: color;
   transition-duration: 250ms ;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  animation-delay: 500ms;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -905,6 +904,7 @@ footer {
 .title .title-1:hover,
 .title .title-1:active {
   color: #2196f3;
+  transition: color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
 }
 .item .e-mail:hover,
 .item .e-mail:focus {
@@ -923,12 +923,12 @@ font-weight:  500;
 font-style: normal;
 font-size: 16px; 
 line-height: 1,6;
-letter-spacing: 0,3;
+letter-spacing: 0,3em;
 text-align: center;
-transition-property: background-color;
+transition-property: color;
 transition-duration: 250ms ;
-transition-timing-function: linear;
-animation-delay: 1000ms;
+transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 
@@ -950,7 +950,9 @@ animation-delay: 1000ms;
 .titles .btn-option:hover,
 .titles .btn-option:focus {
 background-color: #2196F3;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 color: #ffffff;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 box-shadow: 0px 2px 2px 0px #00000012;
 }
 
@@ -1102,6 +1104,7 @@ box-shadow: 0px 2px 2px 0px #00000012;
   height: 12px;
   margin-right: 10px;
   fill: rgba(117, 117, 117, 1);
+  vertical-align: middle;
 }
 .button {
 padding: 0px;
@@ -1133,8 +1136,6 @@ margin-right: 8px;
 transition-property: background-color;
 transition-duration: 250ms ;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-animation-delay: 500ms;
-
 }
 .btn-option-size-second {
 font-weight: 500;
@@ -1207,7 +1208,8 @@ padding-left: 8px;
 }
 
 .projects-box {
-background: #FFFFFF;
+width: 370px;
+height: 105px;
 border: 1px solid #EEEEEE;
 border-top: 0px;
 padding: 20px 0px;
@@ -1262,7 +1264,11 @@ margin-inline-end: 0px;
 .text {
   margin-top: 4px ;
 }
+.list-of-file > .feature:hover {
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+}
 .list-of-file > .feature {
+  border: 1px solid rgba(238, 238, 238, 1);
   flex-basis: calc((100% - 3 * 30px)/3);
   list-style: none; 
   margin-left: 30px;
@@ -1395,6 +1401,7 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color:rgba(33, 150, 243, 0.9);
   display: flex;
   align-items: flex-end;
+  transition: color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
 }
 
  
@@ -1451,13 +1458,35 @@ display: inline-block;
 font-size: 18px;
 font-weight: 400;
 color: #ffffff;
+
 opacity: 0;
 width: 322px;
 height: 168px;
 }
 .hover-text:hover {
 background: rgba(33, 150, 243, 0.9); 
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 opacity: 1;
+}
+.projects-box:hover .hover-text {
+background: rgba(33, 150, 243, 0.9); 
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+opacity: 1;
+}
+.list-of-file .feature:hover .hover-text {
+background: rgba(33, 150, 243, 0.9); 
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+opacity: 1;
+}
+.list-of-file .feature:hover .hover-text a {
+display: inline-block;
+font-size: 18px;
+font-weight: 400;
+color: #ffffff;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+opacity: 1;
+width: 322px;
+height: 168px;
 }
 .hover-text:hover a {
   opacity: 1; 
